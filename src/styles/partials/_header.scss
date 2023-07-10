@@ -1,0 +1,89 @@
+@use "./variables" as *;
+// Navigation
+
+a {
+    text-decoration: none;
+    color: $text;
+}
+
+a:visited {
+    color: $black;
+}
+
+.navigation {
+    height: 10vh;
+}
+
+a:hover {
+    color: $black;
+}
+
+ul {
+    color: $text;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.navigation, .menu, .logo, .auth {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: $primary;
+}
+
+h2 {
+    color: #2B2B39;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+form, input {
+    width: 150px;
+    border: none;
+    padding: 10px;
+}
+
+::placeholder { 
+    font-size: 0.7rem;
+    opacity: 1;
+    color: $text;
+}
+
+.menu {
+    margin-right: 175px;
+}
+
+form {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+button {
+    background-color: #217BF4;
+    color: $white;
+    font-size: 0.8rem;
+    width: 150px;
+    padding: 20px;
+    margin-left: 40px;
+    border-radius: 20%;
+    border: none;
+}
+
+.options {
+    padding: 20px;
+}
+
+.navigation {
+    justify-content: space-around;
+}
+
+.menu ul {
+    padding: 5px 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
