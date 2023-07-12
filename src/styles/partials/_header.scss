@@ -1,24 +1,22 @@
 @use "./variables" as *;
-// Navigation
 
+// Navigation
 a {
     text-decoration: none;
     color: $text;
-}
-
-a:visited {
-    color: $black;
 }
 
 .navigation {
     height: 10vh;
 }
 
-a:hover {
+a:hover,
+a:visited {
     color: $black;
 }
 
-ul {
+ul,
+.bodyText {
     color: $text;
 }
 
@@ -27,13 +25,36 @@ ul {
     height: 35px;
 }
 
-.navigation, .menu, .logo, .auth {
+.navigation,
+.menu,
+.logo,
+.auth {
     display: flex;
     align-items: center;
 }
 
+p,
+button,
+h1 {
+    font-family: "Inter", sans-serif;
+}
+
 h1 {
     color: $primary;
+    text-transform: capitalize;
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+
+h1,
+.bodyText {
+    padding: 10px 0;
+}
+
+.bodyText {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 40px;
 }
 
 h2 {
@@ -42,13 +63,14 @@ h2 {
     font-weight: 600;
 }
 
-form, input {
+form,
+input {
     width: 150px;
     border: none;
     padding: 10px;
 }
 
-::placeholder { 
+::placeholder {
     font-size: 0.7rem;
     opacity: 1;
     color: $text;
@@ -62,15 +84,21 @@ form {
     border-bottom: 1px solid #e5e5e5;
 }
 
-button {
-    background-color: #217BF4;
+.generalButton,
+.loginButton {
+    background-color: $secondary;
     color: $white;
     font-size: 0.8rem;
-    width: 150px;
+    width: 170px;
     padding: 20px;
     margin-left: 40px;
+    border: 1px solid $secondary;
     border-radius: 20%;
-    border: none;
+}
+
+.loginButton {
+    padding: 15px;
+    width: 150px;
 }
 
 .options {
@@ -90,6 +118,66 @@ button {
 
 // Header 
 
-header {
+.heroSection {
     height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage {
+    position: relative;
+    width: 50%;
+
+}
+
+.heroImage .avaterThree {
+    margin-bottom: 50px;
+}
+
+.heroImage .avaterTwo {
+    margin-left: 28%;
+}
+
+.heroImage .avaterOne,
+.heroImage .avaterTwo,
+.heroImage .avaterThree {
+    z-index: 20;
+    position: relative;
+}
+
+.heroImage .triangle {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    z-index: 10;
+}
+
+.heroSection .heroText {
+    width: 40%;
+}
+
+.subtitle {
+    border-radius: 8px;
+    background: #e7f1fd;
+    color: $secondary;
+    border: none;
+    padding: 15px 50px;
+    font-size: 0.8rem;
+}
+
+.heroText {
+    margin-left: 100px;
+}
+
+.gradientBackground {
+    background: linear-gradient(340deg, #D4E7FE 0%, #FFFFFF 90%);
+    z-index: -50;
+}
+
+.generalButton:hover,
+.loginButton:hover {
+    background-color: transparent;
+    color: $secondary;
+    border: 1px solid $secondary;
 }
