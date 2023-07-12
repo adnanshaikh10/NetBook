@@ -1,6 +1,8 @@
 const Footer = () => {
     return (
-        <p>For reals</p>
+        <footer>
+            <p>For reals</p>
+        </footer>
     )
 }
 export default Footer;
