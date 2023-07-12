@@ -231,4 +231,9 @@ h4, h5, p, form, button {
 html {
   font-size: 20px;
   font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
 }/*# sourceMappingURL=setup.css.map */

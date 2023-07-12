@@ -1,3 +1,64 @@
 @use "./variables" as *;
 
 //About 
+
+.aboutUs {
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutText {
+    width: 35%;
+}
+
+.aboutImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.imagePosition {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutText ul {
+    list-style-type: none;
+}
+
+.aboutText li,
+.aboutUs h3 {
+    color: $primary;
+}
+
+.aboutUs h5 {
+    color: $secondary;
+    font-weight: 500;
+}
+
+.aboutUs h3, .aboutUs h5,
+.aboutText ul, .aboutUs p {
+    padding: 15px 0;
+}
+
+.aboutUs li {
+    padding: 5px;
+}
+
+.aboutUs h3 {
+    font-size: 1.7rem;
+}
+
+.imageLeft, .imageTop,
+.imageBottom {
+    padding: 20px;
+    border-radius: 12%;
+}
+
+.aboutDescription {
+    color: $text;
+    line-height: 35px;
+}

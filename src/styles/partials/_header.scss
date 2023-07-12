@@ -106,7 +106,7 @@ form {
 }
 
 .navigation {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .menu ul {
@@ -121,7 +121,7 @@ form {
 .heroSection {
     height: 90vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -166,13 +166,8 @@ form {
     font-size: 0.8rem;
 }
 
-.heroText {
-    margin-left: 100px;
-}
-
 .gradientBackground {
     background: linear-gradient(340deg, #D4E7FE 0%, #FFFFFF 90%);
-    z-index: -50;
 }
 
 .generalButton:hover,

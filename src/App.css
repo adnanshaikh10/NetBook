@@ -233,6 +233,11 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
   color: #686868;
@@ -344,7 +349,7 @@ form {
 }
 
 .navigation {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .menu ul {
@@ -357,7 +362,7 @@ form {
 .heroSection {
   height: 90vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -401,13 +406,8 @@ form {
   font-size: 0.8rem;
 }
 
-.heroText {
-  margin-left: 100px;
-}
-
 .gradientBackground {
   background: linear-gradient(340deg, #D4E7FE 0%, #FFFFFF 90%);
-  z-index: -50;
 }
 
 .generalButton:hover,
@@ -415,4 +415,65 @@ form {
   background-color: transparent;
   color: #217BF4;
   border: 1px solid #217BF4;
+}
+
+.aboutUs {
+  display: flex;
+  padding: 100px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutText {
+  width: 35%;
+}
+
+.aboutImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.imagePosition {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutText ul {
+  list-style-type: none;
+}
+
+.aboutText li,
+.aboutUs h3 {
+  color: #0A093D;
+}
+
+.aboutUs h5 {
+  color: #217BF4;
+  font-weight: 500;
+}
+
+.aboutUs h3, .aboutUs h5,
+.aboutText ul, .aboutUs p {
+  padding: 15px 0;
+}
+
+.aboutUs li {
+  padding: 5px;
+}
+
+.aboutUs h3 {
+  font-size: 1.7rem;
+}
+
+.imageLeft, .imageTop,
+.imageBottom {
+  padding: 20px;
+  border-radius: 12%;
+}
+
+.aboutDescription {
+  color: #686868;
+  line-height: 35px;
 }/*# sourceMappingURL=App.css.map */
