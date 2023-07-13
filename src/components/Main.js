@@ -46,7 +46,7 @@ const Main = () => {
                         <div className="membersPhoto">
                             <img src={photoOne} alt="small profile of Allen" />
                             <img src={photoTwo} alt="small profile of Samantha" />
-                            <img src={photoThree}  alt="small profile of Jared" />
+                            <img src={photoThree} alt="small profile of Jared" />
                         </div>
                         <div className="members">
                             <p><span className="color">+836k </span>Members</p>
@@ -56,7 +56,7 @@ const Main = () => {
                         <p className="ratingText">More than 2 billion people all over the world use socibooks to stay in touch with friends.</p>
                         <div className="cardArrow">
                             <a href="/community" className="color">join our community
-                            <img src={blueArrow} alt="arrow icon" /></a>
+                                <img src={blueArrow} alt="arrow icon" /></a>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ const Main = () => {
                         <p className="awardText">More than 2 billion people all over the world use socibooks to stay in touch with friends.</p>
                         <div className="cardArrow">
                             <a href="/awards">go to awards
-                            <img src={arrow} alt="arrow icon" /></a>
+                                <img src={arrow} alt="arrow icon" /></a>
                         </div>
                     </div>
                 </div>
@@ -90,6 +90,62 @@ const Main = () => {
                             <button className="generalButton">Discover Me
                                 <img src={bigArrow} alt="arrow" />
                             </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="teamMembers">
+                <h5>Valuable Team</h5>
+                <h3>our active members</h3>
+                <p className="teamDescription"> When an unknown printer took a galley of type and meeting fari scrambled it.</p>
+                <div className="buttonFilter">
+                    <button className="filter" id="newest">Newest</button>
+                    <button className="filter" id="popular">Popular</button>
+                    <button className="filter" id="active">Active</button>
+                </div>
+                <div className="profilePhoto">
+                    <div className="photoOne">
+                        <div className="profile">
+                            <img src="#" alt="Fahim Rahman" />
+                            <img src="#" alt="border" />
+                            <img src="#" alt="checkmark" />
+                        </div>
+                        <div className="profileInfo">
+                            <h2>Fahim Rahman</h2>
+                            <p>@rahman</p>
+                        </div>
+                    </div>
+                    <div className="photoTwo">
+                        <div className="profile">
+                            <img src="#" alt="Kazi Rahman" />
+                            <img src="#" alt="border" />
+                            <img src="#" alt="checkmark" />
+                        </div>
+                        <div className="profileInfo">
+                            <h2>Kazi Rahman</h2>
+                            <p>@Rahman</p>
+                        </div>
+                    </div>
+                    <div className="photoThree">
+                        <div className="profile">
+                            <img src="#" alt="Masterero Ali" />
+                            <img src="#" alt="border" />
+                            <img src="#" alt="checkmark" />
+                        </div>
+                        <div className="profileInfo">
+                            <h2>Masterero Ali</h2>
+                            <p>@Master</p>
+                        </div>
+                    </div>
+                    <div className="photoFour">
+                        <div className="profile">
+                            <img src="" alt="Alia Karon" />
+                            <img src="" alt="border" />
+                            <img src="" alt="checkmark" />
+                        </div>
+                        <div className="profileInfo">
+                            <h2>Alia Karon</h2>
+                            <p>@Alia</p>
                         </div>
                     </div>
                 </div>
