@@ -1,6 +1,15 @@
 import imageLeft from "../assets/imageLeft.png";
 import imageTop from "../assets/imageTop.png";
 import imageBottom from "../assets/imageBottom.png";
+import starIcon from "../assets/star.svg";
+import photoOne from "../assets/smallPhotoOne.png";
+import photoTwo from "../assets/smallPhotoTwo.png";
+import photoThree from "../assets/smallPhotoThree.png";
+import arrow from "../assets/arrowRightSmall.svg";
+import blueArrow from "../assets/blueArrow.svg";
+import trophyIcon from "../assets/trophy.svg";
+import githubImage from "../assets/github.png";
+import bigArrow from "../assets/arrowRightBig.svg";
 
 
 const Main = () => {
@@ -29,57 +38,57 @@ const Main = () => {
             </div>
             <div className="acheivements">
                 <div className="ratings">
-                    <div className="cardTitle">
-                        <img src="#" alt="star icon" />
+                    <div className="cardTitleOne">
+                        <img src={starIcon} alt="star icon" />
                         <h4>4.8 Rating</h4>
                     </div>
                     <div className="membersContainer">
                         <div className="membersPhoto">
-                            <img src="#" alt="small profile of Allen" />
-                            <img src="#" alt="small profile of Samantha" />
-                            <img src="#" alt="small profile of Jared" />
+                            <img src={photoOne} alt="small profile of Allen" />
+                            <img src={photoTwo} alt="small profile of Samantha" />
+                            <img src={photoThree}  alt="small profile of Jared" />
                         </div>
                         <div className="members">
                             <p><span className="color">+836k </span>Members</p>
                         </div>
                     </div>
                     <div className="cardText">
-                        <p>More than 2 billion people all over the world use socibooks to stay in touch with friends.</p>
+                        <p className="ratingText">More than 2 billion people all over the world use socibooks to stay in touch with friends.</p>
                         <div className="cardArrow">
-                            <p className="color">join our community</p>
-                            <img className="color" src="#" alt="arrow icon" />
+                            <a href="/community" className="color">join our community
+                            <img src={blueArrow} alt="arrow icon" /></a>
                         </div>
                     </div>
                 </div>
                 <div className="awards">
-                    <div className="cardTitle">
-                        <img src="#" alt="trophy icon" />
+                    <div className="cardTitleTwo">
+                        <img src={trophyIcon} alt="trophy icon" />
                         <h4>Awwwards</h4>
                     </div>
                     <div className="awardsContainer">
                         <div className="awardsPhoto">
-                            <img src="#" alt="small profile of Allen" />
+                            <img src={githubImage} alt="github logo" />
                         </div>
                         <div className="award">
                             <p>Best of <span className="color">2021 </span>on Github</p>
                         </div>
                     </div>
                     <div className="cardText">
-                        <p>More than 2 billion people all over the world use socibooks to stay in touch with friends.</p>
+                        <p className="awardText">More than 2 billion people all over the world use socibooks to stay in touch with friends.</p>
                         <div className="cardArrow">
-                            <p>go to awards</p>
-                            <img src="#" alt="arrow icon" />
+                            <a href="/awards">go to awards
+                            <img src={arrow} alt="arrow icon" /></a>
                         </div>
                     </div>
                 </div>
                 <div className="acheivement">
-                    <div className="aboutText">
+                    <div className="acheivementText">
                         <h5>Our Acheivements</h5>
                         <h3>we are connecting you to the digital life.</h3>
-                        <p className="aboutDescription"> The scope of Social Media becomes crucial to help businesses to directly engage with their needs and wants.</p>
+                        <p className="acheivementDescription"> The scope of Social Media becomes crucial to help businesses to directly engage with their needs and wants.</p>
                         <div className="discoverButton">
-                            <button>Discover Me
-                                <img src="#" alt="arrow" />
+                            <button className="generalButton">Discover Me
+                                <img src={bigArrow} alt="arrow" />
                             </button>
                         </div>
                     </div>
