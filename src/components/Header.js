@@ -2,8 +2,8 @@ import Logo from "../assets/logo.png";
 import avaterOne from "../assets/avater.png";
 import avaterTwo from "../assets/avaterTwo.png";
 import avaterThree from "../assets/avaterThree.png";
-import triangle from "../assets/triangle.png"
-
+import triangle from "../assets/triangle.png";
+import caret from "../assets/caretDown.svg";
 
 const Header = () => {
     return (
@@ -14,12 +14,12 @@ const Header = () => {
                         <img src={Logo} alt="Netbook Logo" />
                         <h2>Netbook</h2>
                     </div>
-                    <div className="menu">
-                        <ul><a href="/home">Home</a></ul>
-                        <ul className="options"><a href="/community">Community&#8964;</a></ul>
-                        <ul><a href="/blog">Blog</a></ul>
-                        <ul><a href="/events">Events</a></ul>
-                    </div>
+                    <ul className="menu">
+                        <li><a href="/home">Home</a></li>
+                        <li className="options"><a href="/community">Community</a><img src={caret} alt="caret icon" /></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/events">Events</a></li>
+                    </ul>
                     <div className="auth">
                         <form action="/search" method="GET">
                             <input type="text" name="query" placeholder=" &#128269; Search Here..." />

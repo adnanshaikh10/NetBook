@@ -6,6 +6,10 @@ a {
     color: $text;
 }
 
+ul,.aboutText ul {
+    list-style-type: none;
+}
+
 .navigation {
     height: 10vh;
 }
@@ -13,10 +17,10 @@ a {
 a:hover,
 a:visited {
     color: $black;
+    text-decoration: underline #686868;
 }
 
-ul,
-.bodyText {
+ul, .bodyText {
     color: $text;
 }
 
@@ -25,17 +29,13 @@ ul,
     height: 35px;
 }
 
-.navigation,
-.menu,
-.logo,
-.auth {
+.navigation, .menu,
+.logo, .auth {
     display: flex;
     align-items: center;
 }
 
-p,
-button,
-h1 {
+p, button, h1 {
     font-family: "Inter", sans-serif;
 }
 
@@ -46,8 +46,7 @@ h1 {
     font-weight: 700;
 }
 
-h1,
-.bodyText {
+h1, .bodyText {
     padding: 10px 0;
 }
 
@@ -63,8 +62,7 @@ h2 {
     font-weight: 600;
 }
 
-form,
-input {
+form, input {
     width: 150px;
     border: none;
     padding: 10px;
@@ -94,6 +92,7 @@ form {
     margin-left: 40px;
     border: 1px solid $secondary;
     border-radius: 20%;
+    cursor: pointer;
 }
 
 .loginButton {
@@ -102,7 +101,7 @@ form {
 }
 
 .options {
-    padding: 20px;
+    display: flex;
 }
 
 .navigation {
@@ -114,6 +113,10 @@ form {
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 0.9rem;
+}
+
+.menu li {
+    padding: 0 40px;
 }
 
 // Header 
