@@ -10,7 +10,11 @@ import blueArrow from "../assets/blueArrow.svg";
 import trophyIcon from "../assets/trophy.svg";
 import githubImage from "../assets/github.png";
 import bigArrow from "../assets/arrowRightBig.svg";
-
+import imageOne from "../assets/imageOne.png";
+import imageTwo from "../assets/imageTwo.png";
+import imageThree from "../assets/imageThree.png";
+import imageFour from "../assets/imageFour.png";
+import imageBackground from "../assets/profileBackground.svg";
 
 const Main = () => {
     return (
@@ -95,53 +99,51 @@ const Main = () => {
                 </div>
             </div>
             <div className="teamMembers">
-                <h5>Valuable Team</h5>
-                <h3>our active members</h3>
-                <p className="teamDescription"> When an unknown printer took a galley of type and meeting fari scrambled it.</p>
-                <div className="buttonFilter">
-                    <button className="filter" id="newest">Newest</button>
-                    <button className="filter" id="popular">Popular</button>
-                    <button className="filter" id="active">Active</button>
+                <div className="teamText">
+                    <h5>Valuable Team</h5>
+                    <h3>our active members</h3>
+                    <p className="teamDescription"> When an unknown printer took a galley of type and meeting fari scrambled it.</p>
+                    <div className="buttonFilter">
+                        <button className="generalButton filter" id="newest">Newest</button>
+                        <button className="generalButton filter" id="popular">Popular</button>
+                        <button className="generalButton filter" id="active">Active</button>
+                    </div>
                 </div>
                 <div className="profilePhoto">
-                    <div className="photoOne">
+                    <div className="imageOne">
                         <div className="profile">
-                            <img src="#" alt="Fahim Rahman" />
-                            <img src="#" alt="border" />
-                            <img src="#" alt="checkmark" />
+                            <img className="image" src={imageOne} alt="Fahim Rahman" />
+                            <img className="border"  src={imageBackground} alt="border" />
                         </div>
                         <div className="profileInfo">
                             <h2>Fahim Rahman</h2>
                             <p>@rahman</p>
                         </div>
                     </div>
-                    <div className="photoTwo">
+                    <div className="imageTwo">
                         <div className="profile">
-                            <img src="#" alt="Kazi Rahman" />
-                            <img src="#" alt="border" />
-                            <img src="#" alt="checkmark" />
+                            <img className="image" src={imageTwo} alt="Kazi Rahman" />
+                            <img className="border"  src={imageBackground} alt="border" />
                         </div>
                         <div className="profileInfo">
                             <h2>Kazi Rahman</h2>
                             <p>@Rahman</p>
                         </div>
                     </div>
-                    <div className="photoThree">
+                    <div className="imageThree">
                         <div className="profile">
-                            <img src="#" alt="Masterero Ali" />
-                            <img src="#" alt="border" />
-                            <img src="#" alt="checkmark" />
+                            <img className="image" src={imageThree} alt="Masterero Ali" />
+                            <img className="border"  src={imageBackground} alt="border" />
                         </div>
                         <div className="profileInfo">
                             <h2>Masterero Ali</h2>
                             <p>@Master</p>
                         </div>
                     </div>
-                    <div className="photoFour">
+                    <div className="imageFour">
                         <div className="profile">
-                            <img src="" alt="Alia Karon" />
-                            <img src="" alt="border" />
-                            <img src="" alt="checkmark" />
+                            <img className="image" src={imageFour} alt="Alia Karon" />
+                            <img className="border" src={imageBackground} alt="border" />
                         </div>
                         <div className="profileInfo">
                             <h2>Alia Karon</h2>

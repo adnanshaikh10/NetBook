@@ -1,3 +1,97 @@
 @use "./variables" as *;
 
 //Team
+.teamMembers h5 {
+    color: $secondary;
+    font-weight: 500;
+}
+
+.teamMembers h3 {
+    color: #0A093D;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+
+.teamMembers p {
+    text-align: center;
+    color: $text;
+    font-size: 0.9rem;
+}
+
+.teamText {
+    margin: 0 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profilePhoto {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonFilter {
+    padding: 10px 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #e7f1fd;
+    width: 100%;
+}
+
+.buttonFilter button {
+    color: #2F2C4A;
+    background: transparent;
+    padding: 20px 40px;
+    border: 1px transparent solid;
+    margin: 0;
+    width: 30%;
+}
+
+.buttonFilter button:hover,
+.buttonFilter button:active {
+    color: $white;
+    background-color: $secondary;
+}
+
+.teamMembers h5,
+.teamMembers h3, 
+.teamMembers p {
+    padding: 10px 0;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.profile .image {
+    position: absolute;
+    z-index: -10;
+    align-content: center;
+}
+
+.profile .image {
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.profileInfo {
+    text-align: center;
+}
+
+.imageOne, .imageTwo, .imageThree, .imageFour {
+    padding: 25px 35px;
+    background: $white;
+    z-index: -20;
+    border: 1px solid rgba(243,243,243,0.7);
+    border-radius: 15px;
+}
+
+.imageOne {
+    border: 1px solid transparent;
+    box-shadow: 0px 34px 68px 0px rgba(116, 115, 128, 0.10);
+}
