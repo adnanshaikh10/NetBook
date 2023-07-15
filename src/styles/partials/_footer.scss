@@ -17,18 +17,14 @@
 
 .menuTwo a:hover,
 .menuTwo a:visited {
-    color: #7e7e7e;
+    color: #B8B8B8;
 }
 
 .footer .wrapper,
-.menuTwo {
+.menuTwo, .logoTwo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.footer h2 {
-    padding-left: 20px;
 }
 
 .menuTwo a {

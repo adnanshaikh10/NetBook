@@ -39,9 +39,9 @@ const Header = () => {
                     </div>
                     <div className="heroImage">
                         <img src={avaterOne} className="avaterOne" alt="character model of a woman looking right in a blue shirt and scarf" />
-                        <img src={avaterThree} height={220} weight={220} className="avaterThree" alt="character model of a man looking left in a yellow jacket" />
+                        <img src={avaterThree} height={270} weight={270} className="avaterThree" alt="character model of a man looking left in a yellow jacket" />
                         <img className="avaterTwo" src={avaterTwo} alt="character model of a man looking left in a blue sweatshirt" />
-                        <img src={triangle} height={400} weight={400} className="triangle" alt="background dashed triangle connecting pictures" />
+                        <img src={triangle} height={375} weight={375} className="triangle" alt="background dashed triangle connecting pictures" />
                     </div>
                 </div>
             </div>

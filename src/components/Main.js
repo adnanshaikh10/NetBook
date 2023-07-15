@@ -15,6 +15,7 @@ import imageTwo from "../assets/imageTwo.png";
 import imageThree from "../assets/imageThree.png";
 import imageFour from "../assets/imageFour.png";
 import imageBackground from "../assets/profileBackground.svg";
+import bullet from "../assets/bulletFinished.png";
 
 const Main = () => {
     return (
@@ -26,9 +27,9 @@ const Main = () => {
                     <p className="aboutDescription"> Recent surveys have indicated that small businesses recognize the need they have to connect with the consumer.</p>
                     <div className="aboutList">
                         <ul>
-                            <li>Groups</li>
-                            <li>Messages</li>
-                            <li>Share</li>
+                            <li><img src={bullet} alt="bulletPoint" /> Groups</li>
+                            <li><img src={bullet} alt="bulletPoint" />Messages</li>
+                            <li><img src={bullet} alt="bulletPoint" />Share</li>
                         </ul>
                     </div>
                 </div>

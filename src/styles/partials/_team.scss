@@ -1,6 +1,14 @@
 @use "./variables" as *;
 
 //Team
+
+.teamMembers {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .teamMembers h5 {
     color: $secondary;
     font-weight: 500;
@@ -30,15 +38,17 @@
     padding: 100px 0;
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .buttonFilter {
-    padding: 10px 0;
+    padding: 10px 10px;
     margin-top: 20px;
     display: flex;
     justify-content: center;
     background-color: #e7f1fd;
-    width: 100%;
+    border-radius: 15px;
 }
 
 .buttonFilter button {
@@ -47,7 +57,6 @@
     padding: 20px 40px;
     border: 1px transparent solid;
     margin: 0;
-    width: 30%;
 }
 
 .buttonFilter button:hover,
@@ -89,6 +98,7 @@
     z-index: -20;
     border: 1px solid rgba(243,243,243,0.7);
     border-radius: 15px;
+    width: 260px;
 }
 
 .imageOne {
