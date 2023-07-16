@@ -1,6 +1,16 @@
 @use "./variables" as *;
 
 // Navigation
+.menuToggle span {
+    display: none;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px; 
+    position: relative; 
+    background: $black;
+    border-radius: 3px;
+}
+
 a {
     text-decoration: none;
     color: $text;
@@ -30,7 +40,7 @@ ul, .bodyText {
 }
 
 .navigation, .menu,
-.logo, .auth {
+.logo, .auth, .specialMedia {
     display: flex;
     align-items: center;
 }
@@ -172,7 +182,188 @@ form {
 
 .generalButton:hover,
 .loginButton:hover {
-    background-color: transparent;
+    background-color: $white;
     color: $secondary;
     border: 1px solid $secondary;
+}
+
+.specialButton:hover {
+    background-color: #000057;
+    color: $white;
+    border: 1px solid $secondary;
+}
+
+//Navigation Media Queries 
+
+@media (max-width: 1490px) {
+    .menu {
+        margin: 0;
+    }
+
+    .menu li {
+        padding: 0 10px;
+      }
+}
+
+@media (max-width: 980px) {
+    .navigation {
+        flex-direction: column;
+        margin: 20px;
+    }
+  
+    .logo, .menu {
+        padding: 10px 0;
+    }
+
+    .heroText {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 550px) {
+    .specialMedia {
+        display: none;
+    }
+   
+    .menuToggle span {
+        display: block;
+    }
+
+    .auth {
+        flex-direction: column;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .loginButton {
+        margin: 10px 0;
+    }
+}
+
+//Header Media Queries
+
+@media (max-width: 1525px) {
+    .heroImage {
+        width: 100%;
+    }
+
+    .generalButton {
+        margin: 10px 10px;
+    }
+
+    .heroSection .heroText {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1190px) {
+
+    .heroSection {
+        flex-direction: column;
+    }
+
+    .heroSection .heroText {
+        width: 100%;
+        text-align: center;
+    }
+
+    .avaterOne {
+        height: 300px;
+        width: 300px;
+        margin-left: 18%;
+        margin-bottom: 0%;
+    }
+
+    .heroImage .avaterTwo {
+        margin-left: 38%;
+        margin-top: -3%;
+    }
+
+    .avaterThree {
+        height: 260px;
+        width: 300px;
+        margin-left: 1%;
+    }
+
+    .heroImage .triangle {
+        position: absolute;
+        top: 24%;
+        left: 28%;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 1085px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .bodyText {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 895px) {
+    .avaterOne {
+        margin-left: 7%;
+    }
+
+    .heroImage .avaterTwo {
+        margin-left: 31%;
+    }
+
+    .heroImage .triangle {
+        display: none;
+    }
+
+    .heroImage .avaterTwo {
+        display: none;
+    }
+
+    .heroImage {
+        display: flex;
+        align-items: center;
+        margin-bottom: 22%;
+        margin-left: -11%;
+    }
+
+    .avaterThree {
+        margin-top: 6%;
+        }
+}
+
+@media (max-width: 700px) {
+    .avaterOne {
+        margin-left: 10%;
+        height: 220px;
+        width: 220px;
+    }
+
+    .avaterThree {
+        height: 200px;
+        width: 240px;
+        margin-left: 1%;
+    }
+}
+
+@media (max-width: 700px) {
+    .avaterOne {
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .avaterThree {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
 }

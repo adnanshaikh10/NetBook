@@ -46,7 +46,7 @@
 }
 
 .members p {
-    padding: 10px 40px;
+    margin: 10px 0 0 40px;
 }
 
 .ratings, .awards {
@@ -118,4 +118,33 @@ h4 {
 
 .color:visited {
     color: $secondary;
+}
+
+// Acheivement Media Queries
+
+@media (max-width: 1410px) {
+    .acheivements {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .ratings, .awards, .acheivement {
+        width: 285px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .cardTitleOne, .cardTitleTwo, 
+    .cardArrow {
+        justify-content: center;
+    }
+
+    .discoverButton .generalButton {
+        display: flex;
+        justify-content: center;
+      }
+
+      .members p, .awards p {
+        font-size: 0.9rem;
+      }
 }

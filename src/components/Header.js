@@ -10,16 +10,23 @@ const Header = () => {
         <header className="gradientBackground">
             <div className="wrapper">
                 <nav className="navigation">
-                    <div className="logo">
-                        <img src={Logo} alt="Netbook Logo" />
-                        <h2>Netbook</h2>
+                    <div className="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <ul className="menu">
-                        <li><a href="/home">Home</a></li>
-                        <li className="options"><a href="/community">Community</a><img src={caret} alt="caret icon" /></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/events">Events</a></li>
-                    </ul>
+                    <div className="specialMedia">
+                        <div className="logo">
+                            <a href="/home"><img src={Logo} alt="Netbook Logo" /></a>
+                            <h2>Netbook</h2>
+                        </div>
+                        <ul className="menu">
+                            <li><a href="/home">Home</a></li>
+                            <li className="options"><a href="/community">Community</a><img src={caret} alt="caret icon" /></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/events">Events</a></li>
+                        </ul>
+                    </div>
                     <div className="auth">
                         <form action="/search" method="GET">
                             <input type="text" name="query" placeholder=" &#128269; Search Here..." />
@@ -39,9 +46,9 @@ const Header = () => {
                     </div>
                     <div className="heroImage">
                         <img src={avaterOne} className="avaterOne" alt="character model of a woman looking right in a blue shirt and scarf" />
-                        <img src={avaterThree} height={270} weight={270} className="avaterThree" alt="character model of a man looking left in a yellow jacket" />
+                        <img src={avaterThree} height={270} className="avaterThree" alt="character model of a man looking left in a yellow jacket" />
                         <img className="avaterTwo" src={avaterTwo} alt="character model of a man looking left in a blue sweatshirt" />
-                        <img src={triangle} height={375} weight={375} className="triangle" alt="background dashed triangle connecting pictures" />
+                        <img src={triangle} height={375} className="triangle" alt="background dashed triangle connecting pictures" />
                     </div>
                 </div>
             </div>

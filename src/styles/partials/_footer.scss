@@ -30,3 +30,35 @@
 .menuTwo a {
     padding: 0 75px;
 }
+
+@media (max-width: 1380px) {
+    .menuTwo a {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .menuTwo a {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .menuTwo a {
+        padding: 0 10px;
+    }
+
+    .menuTwo {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 420px) {
+    footer .wrapper {
+        flex-direction: column;
+    }
+
+    .logoTwo, .menuTwo, .socials {
+        padding: 10px 0;
+    }
+}

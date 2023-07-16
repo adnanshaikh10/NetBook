@@ -26,7 +26,7 @@ const Main = () => {
                     <h3>Why Join Netbook's Social Network?</h3>
                     <p className="aboutDescription"> Recent surveys have indicated that small businesses recognize the need they have to connect with the consumer.</p>
                     <div className="aboutList">
-                        <ul>
+                        <ul className="bulletList">
                             <li><img src={bullet} alt="bulletPoint" /> Groups</li>
                             <li><img src={bullet} alt="bulletPoint" />Messages</li>
                             <li><img src={bullet} alt="bulletPoint" />Share</li>
@@ -92,7 +92,7 @@ const Main = () => {
                         <h3>we are connecting you to the digital life.</h3>
                         <p className="acheivementDescription"> The scope of Social Media becomes crucial to help businesses to directly engage with their needs and wants.</p>
                         <div className="discoverButton">
-                            <button className="generalButton">Discover Me
+                            <button className="specialButton generalButton">Discover Me
                                 <img src={bigArrow} alt="arrow" />
                             </button>
                         </div>

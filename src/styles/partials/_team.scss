@@ -21,7 +21,6 @@
 }
 
 .teamMembers p {
-    text-align: center;
     color: $text;
     font-size: 0.9rem;
 }
@@ -56,7 +55,7 @@
     background: transparent;
     padding: 20px 40px;
     border: 1px transparent solid;
-    margin: 0;
+    margin: 10px 0;
 }
 
 .buttonFilter button:hover,
@@ -69,6 +68,7 @@
 .teamMembers h3, 
 .teamMembers p {
     padding: 10px 0;
+    text-align: center;
 }
 
 .profile {
@@ -104,4 +104,26 @@
 .imageOne {
     border: 1px solid transparent;
     box-shadow: 0px 34px 68px 0px rgba(116, 115, 128, 0.10);
+}
+
+@media (max-width: 1225px) {
+    .imageOne, .imageTwo, 
+    .imageThree, .imageFour {
+        margin: 20px 15px;
+    }
+}
+
+@media (max-width: 580px) {
+    .buttonFilter {
+        flex-direction: column;
+    }
+
+    .teamText {
+        margin: 0 auto;
+    }
+
+    .profilePhoto {
+        padding: 50px 0;
+    }
+
 }

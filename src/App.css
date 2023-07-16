@@ -238,6 +238,16 @@ html {
   margin: 0 auto;
 }
 
+.menuToggle span {
+  display: none;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #000000;
+  border-radius: 3px;
+}
+
 a {
   text-decoration: none;
   color: #686868;
@@ -268,7 +278,7 @@ ul, .bodyText {
 }
 
 .navigation, .menu,
-.logo, .auth {
+.logo, .auth, .specialMedia {
   display: flex;
   align-items: center;
 }
@@ -413,11 +423,156 @@ form {
 
 .generalButton:hover,
 .loginButton:hover {
-  background-color: transparent;
+  background-color: #ffffff;
   color: #217BF4;
   border: 1px solid #217BF4;
 }
 
+.specialButton:hover {
+  background-color: #000057;
+  color: #ffffff;
+  border: 1px solid #217BF4;
+}
+
+@media (max-width: 1490px) {
+  .menu {
+    margin: 0;
+  }
+  .menu li {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 980px) {
+  .navigation {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .logo, .menu {
+    padding: 10px 0;
+  }
+  .heroText {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 550px) {
+  .specialMedia {
+    display: none;
+  }
+  .menuToggle span {
+    display: block;
+  }
+  .auth {
+    flex-direction: column;
+  }
+  .navigation {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .loginButton {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 1525px) {
+  .heroImage {
+    width: 100%;
+  }
+  .generalButton {
+    margin: 10px 10px;
+  }
+  .heroSection .heroText {
+    text-align: center;
+  }
+}
+@media (max-width: 1190px) {
+  .heroSection {
+    flex-direction: column;
+  }
+  .heroSection .heroText {
+    width: 100%;
+    text-align: center;
+  }
+  .avaterOne {
+    height: 300px;
+    width: 300px;
+    margin-left: 18%;
+    margin-bottom: 0%;
+  }
+  .heroImage .avaterTwo {
+    margin-left: 38%;
+    margin-top: -3%;
+  }
+  .avaterThree {
+    height: 260px;
+    width: 300px;
+    margin-left: 1%;
+  }
+  .heroImage .triangle {
+    position: absolute;
+    top: 24%;
+    left: 28%;
+    z-index: 10;
+  }
+}
+@media (max-width: 1085px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .bodyText {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+}
+@media (max-width: 895px) {
+  .avaterOne {
+    margin-left: 7%;
+  }
+  .heroImage .avaterTwo {
+    margin-left: 31%;
+  }
+  .heroImage .triangle {
+    display: none;
+  }
+  .heroImage .avaterTwo {
+    display: none;
+  }
+  .heroImage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22%;
+    margin-left: -11%;
+  }
+  .avaterThree {
+    margin-top: 6%;
+  }
+}
+@media (max-width: 700px) {
+  .avaterOne {
+    margin-left: 10%;
+    height: 220px;
+    width: 220px;
+  }
+  .avaterThree {
+    height: 200px;
+    width: 240px;
+    margin-left: 1%;
+  }
+}
+@media (max-width: 700px) {
+  .avaterOne {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .avaterThree {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
 .aboutUs {
   display: flex;
   padding: 100px 0;
@@ -478,6 +633,29 @@ form {
   line-height: 35px;
 }
 
+.bulletList {
+  margin-left: -3%;
+}
+
+@media (max-width: 920px) {
+  .aboutImage {
+    flex-direction: column;
+    margin: 0;
+  }
+  .aboutText {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 520px) {
+  .aboutUs {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  .bulletList {
+    margin-left: 0;
+  }
+}
 .acheivements {
   display: flex;
   justify-content: space-between;
@@ -523,7 +701,7 @@ form {
 }
 
 .members p {
-  padding: 10px 40px;
+  margin: 10px 0 0 40px;
 }
 
 .ratings, .awards {
@@ -598,6 +776,28 @@ h4 {
   color: #217BF4;
 }
 
+@media (max-width: 1410px) {
+  .acheivements {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .ratings, .awards, .acheivement {
+    width: 285px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .cardTitleOne, .cardTitleTwo,
+  .cardArrow {
+    justify-content: center;
+  }
+  .discoverButton .generalButton {
+    display: flex;
+    justify-content: center;
+  }
+  .members p, .awards p {
+    font-size: 0.9rem;
+  }
+}
 .teamMembers {
   justify-content: center;
   display: flex;
@@ -617,7 +817,6 @@ h4 {
 }
 
 .teamMembers p {
-  text-align: center;
   color: #686868;
   font-size: 0.9rem;
 }
@@ -652,7 +851,7 @@ h4 {
   background: transparent;
   padding: 20px 40px;
   border: 1px transparent solid;
-  margin: 0;
+  margin: 10px 0;
 }
 
 .buttonFilter button:hover,
@@ -665,6 +864,7 @@ h4 {
 .teamMembers h3,
 .teamMembers p {
   padding: 10px 0;
+  text-align: center;
 }
 
 .profile {
@@ -702,6 +902,23 @@ h4 {
   box-shadow: 0px 34px 68px 0px rgba(116, 115, 128, 0.1);
 }
 
+@media (max-width: 1225px) {
+  .imageOne, .imageTwo,
+  .imageThree, .imageFour {
+    margin: 20px 15px;
+  }
+}
+@media (max-width: 580px) {
+  .buttonFilter {
+    flex-direction: column;
+  }
+  .teamText {
+    margin: 0 auto;
+  }
+  .profilePhoto {
+    padding: 50px 0;
+  }
+}
 .footer {
   padding: 50px 0;
   background-color: #2B2B39;
@@ -730,4 +947,31 @@ h4 {
 
 .menuTwo a {
   padding: 0 75px;
+}
+
+@media (max-width: 1380px) {
+  .menuTwo a {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1030px) {
+  .menuTwo a {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 850px) {
+  .menuTwo a {
+    padding: 0 10px;
+  }
+  .menuTwo {
+    flex-direction: column;
+  }
+}
+@media (max-width: 420px) {
+  footer .wrapper {
+    flex-direction: column;
+  }
+  .logoTwo, .menuTwo, .socials {
+    padding: 10px 0;
+  }
 }/*# sourceMappingURL=App.css.map */
