@@ -239,6 +239,26 @@ html {
   margin: 0 auto;
 }
 
+h1 {
+  color: #0A093D;
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.bodyText {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+h2 {
+  color: #2B2B39;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
 .teamMembers h3,
 .acheivementText h3,
 .aboutUs h3 {
@@ -271,14 +291,6 @@ html {
 .teamMembers h5 {
   color: #217BF4;
   font-weight: 500;
-}
-
-.aboutDescription,
-.acheivementDescription,
-.teamMembers p {
-  color: #686868;
-  line-height: 35px;
-  font-size: 0.9rem;
 }
 
 .aboutDescription,
@@ -338,28 +350,8 @@ p, button, h1 {
   font-family: "Inter", sans-serif;
 }
 
-h1 {
-  color: #0A093D;
-  text-transform: capitalize;
-  font-size: 3rem;
-  font-weight: 700;
-}
-
 h1, .bodyText {
   padding: 10px 0;
-}
-
-.bodyText {
-  font-size: 1.3rem;
-  font-weight: 300;
-  line-height: 40px;
-}
-
-h2 {
-  color: #2B2B39;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  padding-left: 20px;
 }
 
 form, input {

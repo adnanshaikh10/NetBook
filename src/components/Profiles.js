@@ -21,7 +21,7 @@ const Profiles = (value) => {
                 </div>
                 <div className="profileInfo">
                     <h2>{profile.name}</h2>
-                    <p>{profile.tag}</p>
+                    <p>{profile.handle}</p>
                 </div>
             </div>
         ))
