@@ -84,20 +84,6 @@ h4 {
     color: #8C8C8C;
 }
 
-.acheivementText h5 {
-    color: $secondary;
-    font-weight: 500;
-}
-
-.acheivementText h3 {
-    color: $primary;
-    text-transform: capitalize;
-    font-size: 1.6rem;
-}
-
-.acheivementDescription {
-    font-size: 0.9rem;
-}
 .acheivementText h3,
 .acheivementText h5,
 .acheivementDescription {
@@ -139,7 +125,7 @@ h4 {
         justify-content: center;
     }
 
-    .discoverButton .generalButton {
+    .discoverButton {
         display: flex;
         justify-content: center;
       }

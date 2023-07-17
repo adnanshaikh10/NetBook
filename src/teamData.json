@@ -1,0 +1,36 @@
+{
+  "profilePhoto": [
+    {
+      "name": "Fahim Rahman",
+      "className": "imageOne",
+      "photoUrl": "../assets/imageOne.png",
+      "handle": "@rahman",
+      "tag": "Newest",
+      "id": "1"
+    },
+    {
+      "name": "Kazi Rahman",
+      "className": "imageTwo",
+      "photoUrl": "../assets/imageTwo.png",
+      "handle": "@Rahman",
+      "tag": "Popular",
+      "id": "2"
+    },
+    {
+      "name": "Masterero Ali",
+      "className": "imageThree",
+      "photoUrl": "../assets/imageThree.png",
+      "handle": "@Master",
+      "tag": "Newest",
+      "id": "3"
+    },
+    {
+      "name": "Alia Karon",
+      "className": "imageFour",
+      "photoUrl": "../assets/imageFour.png",
+      "handle": "@Alia",
+      "tag": "Active",
+      "id": "4"
+    }
+  ]
+}

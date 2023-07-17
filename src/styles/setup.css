@@ -234,6 +234,57 @@ html {
 }
 
 .wrapper {
+  max-width: 1920px;
   width: 85%;
   margin: 0 auto;
+}
+
+.teamMembers h3,
+.acheivementText h3,
+.aboutUs h3 {
+  text-transform: capitalize;
+  font-size: 1.75rem;
+}
+
+.aboutText li,
+.aboutUs h3,
+.teamMembers h3,
+.acheivementText h3 {
+  color: #0A093D;
+}
+
+.generalButton,
+.loginButton {
+  background-color: #217BF4;
+  color: #ffffff;
+  font-size: 0.8rem;
+  width: 170px;
+  padding: 20px;
+  margin-left: 40px;
+  border: 1px solid #217BF4;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.aboutUs h5,
+.acheivementText h5,
+.teamMembers h5 {
+  color: #217BF4;
+  font-weight: 500;
+}
+
+.aboutDescription,
+.acheivementDescription,
+.teamMembers p {
+  color: #686868;
+  line-height: 35px;
+  font-size: 0.9rem;
+}
+
+.aboutDescription,
+.acheivementDescription,
+.teamMembers p {
+  color: #686868;
+  line-height: 30px;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=setup.css.map */

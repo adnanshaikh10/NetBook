@@ -10,20 +10,25 @@ import blueArrow from "../assets/blueArrow.svg";
 import trophyIcon from "../assets/trophy.svg";
 import githubImage from "../assets/github.png";
 import bigArrow from "../assets/arrowRightBig.svg";
-import imageOne from "../assets/imageOne.png";
-import imageTwo from "../assets/imageTwo.png";
-import imageThree from "../assets/imageThree.png";
-import imageFour from "../assets/imageFour.png";
-import imageBackground from "../assets/profileBackground.svg";
 import bullet from "../assets/bulletFinished.png";
+import Profiles from "./Profiles.js";
+import React, {useState} from "react";
 
 const Main = () => {
+
+    const [value, setValue] = useState("");
+
+    const handleClick = (e) => {
+       const value = (e.target.innerText);
+       setValue(value);
+    }
+    
     return (
         <div className="wrapper">
             <div className="aboutUs">
                 <div className="aboutText">
                     <h5>What's Netbook?</h5>
-                    <h3>Why Join Netbook's Social Network?</h3>
+                    <h3>why join netbook's social network?</h3>
                     <p className="aboutDescription"> Recent surveys have indicated that small businesses recognize the need they have to connect with the consumer.</p>
                     <div className="aboutList">
                         <ul className="bulletList">
@@ -105,53 +110,12 @@ const Main = () => {
                     <h3>our active members</h3>
                     <p className="teamDescription"> When an unknown printer took a galley of type and meeting fari scrambled it.</p>
                     <div className="buttonFilter">
-                        <button className="generalButton filter" id="newest">Newest</button>
-                        <button className="generalButton filter" id="popular">Popular</button>
-                        <button className="generalButton filter" id="active">Active</button>
+                        <button onClick={handleClick} className="generalButton filter" id="newest">Newest</button>
+                        <button onClick={handleClick} className="generalButton filter" id="popular">Popular</button>
+                        <button onClick={handleClick} className="generalButton filter" id="active">Active</button>
                     </div>
                 </div>
-                <div className="profilePhoto">
-                    <div className="imageOne">
-                        <div className="profile">
-                            <img className="image" src={imageOne} alt="Fahim Rahman" />
-                            <img className="border"  src={imageBackground} alt="border" />
-                        </div>
-                        <div className="profileInfo">
-                            <h2>Fahim Rahman</h2>
-                            <p>@rahman</p>
-                        </div>
-                    </div>
-                    <div className="imageTwo">
-                        <div className="profile">
-                            <img className="image" src={imageTwo} alt="Kazi Rahman" />
-                            <img className="border"  src={imageBackground} alt="border" />
-                        </div>
-                        <div className="profileInfo">
-                            <h2>Kazi Rahman</h2>
-                            <p>@Rahman</p>
-                        </div>
-                    </div>
-                    <div className="imageThree">
-                        <div className="profile">
-                            <img className="image" src={imageThree} alt="Masterero Ali" />
-                            <img className="border"  src={imageBackground} alt="border" />
-                        </div>
-                        <div className="profileInfo">
-                            <h2>Masterero Ali</h2>
-                            <p>@Master</p>
-                        </div>
-                    </div>
-                    <div className="imageFour">
-                        <div className="profile">
-                            <img className="image" src={imageFour} alt="Alia Karon" />
-                            <img className="border" src={imageBackground} alt="border" />
-                        </div>
-                        <div className="profileInfo">
-                            <h2>Alia Karon</h2>
-                            <p>@Alia</p>
-                        </div>
-                    </div>
-                </div>
+                <Profiles tag={value}/>
             </div>
         </div>
     )

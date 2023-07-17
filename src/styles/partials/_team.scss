@@ -9,22 +9,6 @@
     align-items: center;
 }
 
-.teamMembers h5 {
-    color: $secondary;
-    font-weight: 500;
-}
-
-.teamMembers h3 {
-    color: #0A093D;
-    text-transform: capitalize;
-    font-size: 1.6rem;
-}
-
-.teamMembers p {
-    color: $text;
-    font-size: 0.9rem;
-}
-
 .teamText {
     margin: 0 550px;
     display: flex;
@@ -59,12 +43,11 @@
 }
 
 .buttonFilter button:hover,
-.buttonFilter button:active {
+.buttonFilter button:focus-within {
     color: $white;
     background-color: $secondary;
 }
 
-.teamMembers h5,
 .teamMembers h3, 
 .teamMembers p {
     padding: 10px 0;

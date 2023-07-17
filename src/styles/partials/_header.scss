@@ -93,19 +93,6 @@ form {
     border-bottom: 1px solid #e5e5e5;
 }
 
-.generalButton,
-.loginButton {
-    background-color: $secondary;
-    color: $white;
-    font-size: 0.8rem;
-    width: 170px;
-    padding: 20px;
-    margin-left: 40px;
-    border: 1px solid $secondary;
-    border-radius: 20%;
-    cursor: pointer;
-}
-
 .loginButton {
     padding: 15px;
     width: 150px;
