@@ -1,0 +1,64 @@
+@use "./variables" as *;
+
+//Footer
+
+.footer {
+    padding: 50px 0;
+    background-color: #2B2B39;
+}
+.footer .social {
+    padding: 0 5px;
+}
+
+.menuTwo a,
+.logoTwo h2 {
+    color: $white;
+}
+
+.menuTwo a:hover,
+.menuTwo a:visited {
+    color: #B8B8B8;
+}
+
+.footer .wrapper,
+.menuTwo, .logoTwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuTwo a {
+    padding: 0 75px;
+}
+
+@media (max-width: 1380px) {
+    .menuTwo a {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .menuTwo a {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .menuTwo a {
+        padding: 0 10px;
+    }
+
+    .menuTwo {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 420px) {
+    footer .wrapper {
+        flex-direction: column;
+    }
+
+    .logoTwo, .menuTwo, .socials {
+        padding: 10px 0;
+    }
+}

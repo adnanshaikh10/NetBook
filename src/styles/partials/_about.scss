@@ -1,0 +1,70 @@
+@use "./variables" as *;
+
+//About 
+
+.aboutUs {
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutText {
+    width: 35%;
+}
+
+.aboutImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.imagePosition {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUs h3, .aboutUs h5,
+.aboutText ul, .aboutUs p {
+    padding: 15px 0;
+}
+
+.aboutUs li {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.imageLeft, .imageTop,
+.imageBottom {
+    padding: 20px;
+    border-radius: 12%;
+}
+
+.bulletList {
+    margin-left: -3%;
+}
+
+@media (max-width: 920px) {
+    .aboutImage {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .aboutText {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .aboutUs {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .bulletList {
+        margin-left: 0;
+    }
+}
